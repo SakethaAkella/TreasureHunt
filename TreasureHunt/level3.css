@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+    background-image: url(image/pexels-pixabay-159862.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.popup{
+    position:absolute;
+    width: 100%;
+    height: 80%;
+    background-color: none;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content{
+    width: 30vw;
+    background-color: #bbb89e;
+    padding: 3rem;
+    box-shadow: 0 0 .5em rgba(0,0,0,0.4);
+    border-radius: 0.5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: relative;
+    font-family:'Sedgwick Ave Display', cursive;
+
+}
+.popup h1{
+    position:absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.popup h1:active{
+    transform: scale(.9);
+}
+
+.showPopup{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+#banner{  
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+ .main-text{
+     text-align: center;
+     color: rgb(40, 16, 52);
+     padding-top: 80px;
+     padding-left: 40px;
+     padding-right: 40px;
+ }
+ .main-text h2{
+     font-family: 'Sedgwick Ave Display', cursive;
+ }
+ #answerForm{
+    font-family: 'Sedgwick Ave Display', cursive;
+ }
+ #answerForm input{
+    font-family: 'Sedgwick Ave Display', cursive;
+ }
+ .next:hover{
+    background-color: rgb(173, 135, 73);
+    color: rgb(0, 10, 10);
+}
+.popup-content{
+    margin: 30px auto 0;
+}
+.popup-content a{
+    width: 90px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
+    color: rgb(251, 251, 246);
+    background-color: rgb(144, 140, 121);
+    border: .5px solid rgb(49, 48, 0);
+    font-size: 18px;
+    transition-duration: 0.4s;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
